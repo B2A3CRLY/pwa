@@ -23,7 +23,7 @@ self.addEventListener('install', function(event) {
   if (doCache) {
     event.waitUntil(
       caches.open(CACHE_NAME)
-        .then(function(cache) {
+        .then(function(cache){
           fetch('asset-manifest.json')
             .then(response => {
               response.json();

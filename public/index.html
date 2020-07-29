@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="./logo192.png"/>
+    <link rel="icon" type="image/png" href="./image/logo192.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -13,7 +13,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <!-- Tell iOS it's a PWA -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon" href="./logo192.png" />
+    <link rel="apple-touch-icon" href="./image/logo192.png" />
     <link rel="manifest" href="./manifest.json"/>
     <title>React App</title>
     <style type="text/css">
@@ -51,7 +51,7 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
-          navigator.serviceWorker.register('worker.js').then(function(registration) {
+          navigator.serviceWorker.register('./worker.js').then(function(registration) {
             console.log('Worker registration successful', registration.scope);
           }, function(err) {
             console.log('Worker registration failed', err);
